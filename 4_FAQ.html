@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@500;700&family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <title>FAQ</title>
+    <style>
+      main{
+        background: url(css/background.jpg);
+        background-size: cover;
+      }
+      .accordion:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+     
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc; 
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="landing">
+        <nav>
+          <h1 id="logo"><a href="1_HomePage.html">Movier</a></h1>
+          <ul class="nav-links">
+            <li><a href="2_Login.html">Login</a></li>
+            <li><a href="3_CreateAccount.html">Create Account</a></li>
+          </ul>
+        </nav>
+        <p style="text-align: center; font-size: 25px;color: white;">F.A.Q.</p>
+        <hr style="width:200px; margin: auto;" />
+        <div class="space" style="height: 50px;"></div>
+        <button class="accordion">What is Movier?</button>
+<div class="panel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<button class="accordion">How much do I need to pay for?</button>
+<div class="panel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<button class="accordion">How can I cancel?</button>
+<div class="panel">
+  <p>You can cancel your account easily below the edit profile section.</p>
+</div>
+<button class="accordion">How can I change payment options?</button>
+<div class="panel">
+  <p>Under the edit profile section you can change your payment informations.</p>
+</div>
+<button class="accordion">Other questions?</button>
+<div class="panel">
+  <p>If you have still questions you can call 0850 996 7484 or send your questions to moviersupport@movier.com 24/7.</p>
+</div>
+
+      </section>
+      <footer>
+        <ul class="footer-links">
+          <li><a href="28_TermsOfUse.html">TERMS OF USE</a></li>
+          <li><a href="29_PrivacyPolicy.html">PRIVACY POLICY</a></li>
+          <li><a href="4_FAQ.html">F.A.Q.</a></li>
+        </ul>
+        
+    </footer>
+    </main>
+    <script>
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+      
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var panel = this.nextElementSibling;
+          if (panel.style.display === "block") {
+            panel.style.display = "none";
+          } else {
+            panel.style.display = "block";
+          }
+        });
+      }
+      </script>
+  </body>
+</html> 
