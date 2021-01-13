@@ -67,7 +67,13 @@
                             <button class="btn" type="submit" name="">Finish Cancellation</button>
                         </div>
                         <div class="btnholder2">
-                            <button class="btn" type="submit" name="">Go Back to Profile</button>
+                            <button class="btn" type="submit" id="buttonf" name="">Go Back to Profile</button>
+                            <script>
+                                var button = document.getElementById("buttonf");
+                                button.onclick = function () {
+                                    window.open("20_EditProfile.html");
+                                }
+                            </script>
                         </div>
                     </div>
                 </form>
