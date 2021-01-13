@@ -109,10 +109,14 @@ body {
   top: 230px;
 }
 
+.paymentForm .explanation .card label {
+  color: white;
+}
+
 .paymentForm .explanation .card1 {
   position: absolute;
   left: 350px;
-  top: 290px;
+  top: 330px;
 }
 .paymentForm .explanation .card input {
   color: white;
@@ -120,13 +124,20 @@ body {
   height: 20px;
   float: left;
   text-align: start;
-  background-color: #444748e1;
+  background-color: #c4c4c4;
   border: 2px solidrgba(225, 225, 225, 0.5);
   font-size: 18px;
-  border-radius: 10px;
+  border-radius: 14px;
   padding-left: 2px;
   margin: 20px 0 35px;
   padding: 10px 10px 20px 40px;
+}
+
+.paymentForm .explanation .card1 label {
+  color: white;
+  position: absolute;
+  top: -8px;
+  left: 5px;
 }
 .paymentForm .explanation .card1 input {
   color: white;
@@ -135,10 +146,10 @@ body {
   /* height: 1%; */
   float: left;
   text-align: start;
-  background-color: #444748e1;
+  background-color: #c4c4c4;
   border: 2px solidrgba(225, 225, 225, 0.5);
   font-size: 18px;
-  border-radius: 10px;
+  border-radius: 14px;
   /* padding: 5px 0; */
   /* padding-top: 10px; */
   padding-left: 2px;
@@ -148,24 +159,31 @@ body {
   padding: 10px 10px 20px 40px;
 }
 
+.paymentForm .explanation .card2 label {
+  color: white;
+  position: absolute;
+  top: 413px;
+  left: 355px;
+}
+
 .paymentForm .explanation .card2 input {
   /* display: grid; */
   /* grid-row-gap: 50px; */
   /* grid-template-columns: auto auto auto; */
   position: absolute;
 
-  left: 350px;
-  top: 350px;
+  left: 355px;
+  top: 420px;
   color: white;
   width: 100px;
   height: 20px;
   /* height: 1%; */
   float: left;
   text-align: start;
-  background-color: #444748e1;
-  border: 2px solidrgba(225, 225, 225, 0.5);
+  background-color: #c4c4c4;
+  border: 2px solid rgba(225, 225, 225, 0.5);
   font-size: 20px;
-  border-radius: 10px;
+  border-radius: 15px;
   /* padding: 5px 0; */
   /* padding-top: 10px; */
   padding-left: 10px;
@@ -176,50 +194,70 @@ body {
 .paymentForm .explanation .card3 input {
   position: absolute;
   left: 470px;
-  top: 350px;
+  top: 420px;
   color: white;
   width: 100px;
   height: 20px;
   float: left;
   text-align: start;
-  background-color: #444748e1;
+  background-color: #c4c4c4;
   border: 2px solidrgba(225, 225, 225, 0.5);
   font-size: 17px;
-  border-radius: 10px;
+  border-radius: 15px;
   padding-left: 10px;
   margin: 20px 0 35px;
   padding: 10px 10px 20px 10px;
 }
+.paymentForm .explanation .card3 label {
+  color: white;
+  position: absolute;
+  top: 413px;
+  left: 485px;
+}
+.paymentForm .explanation .card4 label {
+  color: white;
+  position: absolute;
+  top: 493px;
+  left: 365px;
+}
+
 .paymentForm .explanation .card4 input {
   position: absolute;
-  left: 350px;
-  top: 400px;
+  left: 360px;
+  top: 499px;
   color: white;
   width: 100px;
   height: 20px;
   float: left;
   text-align: start;
-  background-color: #444748e1;
+  background-color: #c4c4c4;
   border: 2px solidrgba(225, 225, 225, 0.5);
   font-size: 15px;
-  border-radius: 10px;
+  border-radius: 15px;
   padding-left: 10px;
   margin: 20px 0 35px;
   padding: 10px 10px 20px 10px;
+}
+
+.paymentForm .explanation .card5 label {
+  color: white;
+  position: absolute;
+  top: 493px;
+  left: 475px;
 }
 .paymentForm .explanation .card5 input {
   position: absolute;
   left: 470px;
-  top: 400px;
+  top: 499px;
   color: white;
   width: 100px;
   height: 20px;
   float: left;
   text-align: start;
-  background-color: #444748e1;
+  background-color: #c4c4c4;
   border: 2px solidrgba(225, 225, 225, 0.5);
   font-size: 15px;
-  border-radius: 10px;
+  border-radius: 15px;
   padding-left: 10px;
   margin: 20px 0 35px;
   padding: 10px 10px 20px 10px;
@@ -280,8 +318,8 @@ body {
 
 .btnholder {
   position: absolute;
-  left: 400px;
-  bottom: 300px;
+  left: 500px;
+  bottom: 230px;
   width: 500px;
   margin: 0 auto;
   /* float: left; */
@@ -289,8 +327,8 @@ body {
 }
 .btnholder2 {
   position: absolute;
-  left: 700px;
-  bottom: 300px;
+  left: 800px;
+  bottom: 230px;
   width: 500px;
   margin: 0 auto;
   /* float: left; */

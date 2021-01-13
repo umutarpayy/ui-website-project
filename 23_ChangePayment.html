@@ -1,11 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>title123</title>
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <title>Settings</title>
+    <link rel="stylesheet" href="css/cpayment.css">
+    <style>
+        .h1 {
+            font-size: 40px;
+            border: rgba(225, 225, 225, 0.5) solid 2px;
+            border-radius: 25px;
+        }
+    </style>
+    <!--border: 2px white;
+        border-radius: 8px;-->
+
 </head>
+
 <body>
-    
+    <div class="wrapper">
+        <div class="sidebar">
+            <h1 class="h1"><i class="fas fa-cog"></i> Settings</h1>
+            <ul style="list-style: none;">
+                <li><a href="21_CurrentPassword.html">Change Password</a></li>
+                <li><a href="22_PrivacySettings.html">Privacy Settings</a></li>
+                <li class="active"><a href="23_ChangePayment.html">Change Payment</a></li>
+                <li><a href="24_CancelSubscription.html">Cancel Subscription</a></li>
+                <li><a href="25_DeleteAccount.html">Delete Account</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="topright"><a href="20_EditProfile.html"><img src="img/close_white_2048x2048.png" height="50px"
+                width="50px"></a> </div>
+
+    <div class="paymentForm">
+        <form>
+            <h2 style="text-decoration: underline;">Change Payment Information</h2>
+
+            <div class="explanation">
+                <h3 style="text-decoration: underline;">Payment Information</h3>
+                <form>
+
+                    <div class="card">
+                        <span><label for="cpass">Card Name</label></span>
+                        <input type="text" name="" placeholder="Name on card" required="required">
+                    </div>
+                    <div class="card1">
+                        <span><label for="cpass">Card Number</label></span>
+                        <input type="text" name="" placeholder="Card number" required="required">
+                    </div>
+                    <div class="card2">
+                        <span><label for="cpass">Expiration Date</label></span>
+                        <input type="text" name="" placeholder="MM/YY" required="required">
+                    </div>
+                    <div class="card3">
+                        <span><label for="cpass">CVC</label></span>
+                        <input type="text" name="" placeholder="CVC" required="required">
+                    </div>
+                    <div class="card4">
+                        <span><label for="cpass">Country Code</label></span>
+                        <input type="text" name="" placeholder="C.Code" required="required">
+                    </div>
+                    <div class="card5">
+                        <span><label for="cpass">Postal Code</label></span>
+                        <input type="text" name="" placeholder="P.Code" required="required">
+                    </div>
+
+
+
+                    <div class=" btnholder">
+                        <button class="btn" type="submit" name="">Save Changes</button>
+                    </div>
+                    <div class=" btnholder2">
+                        <button class="btn" type="submit" name="">Cancel</button>
+                    </div>
+
+
+            </div>
+            <div class="subs">
+                <h3 style="text-decoration: underline;">Choose Subscription</h3>
+                <div class=" first">
+                    <input type="radio" id="age1" name="ücret" value="10dolar">
+                    <label for="">$9.99 Monthly</label><br>
+                </div>
+                <div class="second">
+                    <input type="radio" id="age1" name="ücret" value="40dolar">
+                    <label for="">$39.99 Yearly</label><br>
+                </div>
+
+            </div>
+        </form>
+    </div>
+    </form>
+    </div>
 </body>
-</html>
