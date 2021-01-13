@@ -71,9 +71,15 @@
                         <input type="password" name="" placeholder="Type current password">
                     </div>
                     <div class="btnholder ">
-                        <button class="btn">Delete my account</button>
+                        <button id="del" class="btn">Delete my account</button>
 
                     </div>
+                    <script>
+                        var button = document.getElementById("del");
+                        button.onclick = function () {
+                            window.open("31_AfterDelAcc.html");
+                        }
+                    </script>
 
 
                     <div class=" btnholder2">
@@ -82,7 +88,7 @@
                     <script>
                         var button = document.getElementById("buttonf");
                         button.onclick = function () {
-                            window.open("20_EditProfile.html");
+                            window.open("11_Profile.html");
                         }
                     </script>
 

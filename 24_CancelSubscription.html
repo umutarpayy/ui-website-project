@@ -64,8 +64,14 @@
                                 waiting for you.</p>
                         </div>
                         <div class="btnholder ">
-                            <button class="btn" type="submit" name="">Finish Cancellation</button>
+                            <button class="btn" type="submit" id="cancel" name="">Finish Cancellation</button>
                         </div>
+                        <script>
+                            var button = document.getElementById("cancel");
+                            button.onclick = function () {
+                                window.open("30_AfterCancelSubscription.html");
+                            }
+                        </script>
                         <div class="btnholder2">
                             <button class="btn" type="submit" id="buttonf" name="">Go Back to Profile</button>
                             <script>
